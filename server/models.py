@@ -15,6 +15,7 @@ class Article(db.Model, SerializerMixin):
     author = db.Column(db.String)
     title = db.Column(db.String)
     content = db.Column(db.String)
+    
     preview = db.Column(db.String)
     minutes_to_read = db.Column(db.Integer)
     date = db.Column(db.DateTime, server_default=db.func.now())
